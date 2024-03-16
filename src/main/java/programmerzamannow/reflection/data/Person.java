@@ -1,6 +1,9 @@
 package programmerzamannow.reflection.data;
 
-public class Person implements Nameable{
+import java.io.Serial;
+import java.io.Serializable;
+
+public final class Person implements Nameable, Serializable {
 
     private String firstName;
     private String lastName;
