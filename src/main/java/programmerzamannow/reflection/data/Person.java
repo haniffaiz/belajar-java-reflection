@@ -1,11 +1,15 @@
 package programmerzamannow.reflection.data;
 
+import programmerzamannow.reflection.annotation.NotBlank;
+
 import java.io.Serial;
 import java.io.Serializable;
 
 public final class Person implements Nameable, Serializable {
 
+    @NotBlank
     private String firstName;
+    @NotBlank(allowEmptyString = true)
     private String lastName;
 
     public Person() {
